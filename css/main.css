@@ -1,6 +1,6 @@
 /* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
+.projects {
+	margin-left: 20px;
 }
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
