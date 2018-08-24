@@ -10,13 +10,18 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// add any functionality and listeners you want here
-	console.log("Javascript is connected!");
 }
 
-$(".img-thumbnail").click(projectClick);
+$(".project .img-thumbnail").click(projectClick);
 
 function projectClick(e){
 	e.preventDefault();
 	$(this).css("background-color", "#7fffff");
-	console.log("it worked")
+	$(this).parent().next().toggle();
+	return false;
+	$(this).css("background-color", "#808080")
 }
+
+$(".nav-item").click(function(e) {
+	$(this).toggleClass("active").siblings().removeClass("active");
+})

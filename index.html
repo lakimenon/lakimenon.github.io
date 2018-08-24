@@ -20,29 +20,33 @@
 <body>
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
-	<div class="jumbotron-container">
+	<nav class="navbar fixed-top navbar-light" style="background-color: #e3f2fd;">
+		<a class="nav-item" nav-link href="#about">About</a>
+		<a class="nav-item" nav-link href="#projects">Projects</a>
+		<a class="nav-item" nav-link href="#contacts">Contact</a>
+  	
+	</nav>
+	<div class="jumbotron-container" id = "about">
 		<h1>Lakshmi S. Menon</h1>
 	</div>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-2" id="profile">
-				<div>
-					<img src = "images/P1292072.jpg" class="img-thumbnail" height = "250" width = "175">
-				</div>
+		<div class="row" id="profile" >
+			<div class="col-md-4 col-md-offset-2"  >
+					<img src = "images/P1292072.jpg" class="img-thumbnail" height = "300" width = "225">
 			</div>
-			<div class="col-md-4"  style="position: right">
-			<h2>About Me</h2>
+			<div class="col-md-4" style="position: right">
+				<h2>About Me</h2>
 		<!--<div class="col-md-4"  style="position: right">-->
 			<p id="about">I am a third year Cognitive Science student at the University of California, San Diego. I am specializing in Machine Learning and Neural Computation and minoring in mathematics. I am interested in data science and its various applications and also have experience with neurofeedback training and EEG testing. In my free time I enjoy dancing, reading, and listening to music.
 			</p>
 			<p> <a href = "docs/Copy of Resume.pdf">View my resume</a>
 			</p>
-		</div>
+			</div>
 		</div>
 	</div>
 	<br>
 	<br>
-	<div class="row col-md-12">
+	<div class="row col-md-12" id="projects">
 		<h2>Projects</h2>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
@@ -50,27 +54,23 @@
 	</div>
 	<br>
 	<div class="row">					
-		<ul>
-			<div class="project col-md-8" id="project1">		
-				<li><h4>Regression on Countries of the World Dataset</h4>
-					<img src="images/map.gif" class="img-thumbnail" alt="World Map" >
-					<p class="project-text">I worked with a group of three others to perform some data analysis and modelling on a dataset containing socioeconomic and demographic information for 227 countries. We used linear regression to predict the GDP of a country from various other attributes.</p>
-						<p> <a href = "docs/Final Poster.pdf">Click here to view our final poster</a>
-						</p>
-					</li>
-				</div>
-				<br><br>
-				<div class="project col-md-4" id="project2">		
-					<li>
-						<h4>Check back here for future projects as they are completed!</h4>
-					</li>
-				</div>
-			</ul>		
+		<div class="project col-md-4" id="project1">	
+				<h5>Regression on Countries of the World Dataset</h5>
+	
+			<a>
+			<img src="images/map.gif" class="img-thumbnail" alt="World Map" height="300" width="250"/></a>
+			<p class="project-text">I worked with a group of three others to perform some data analysis and modelling on a dataset containing socioeconomic and demographic information for 227 countries. We used linear regression to predict the GDP of a country from various other attributes.<br><br>
+			 <a href = "docs/Final Poster.pdf">Click here to view our final poster</a>
+			</p>		
+		</div>	
+		<div class="project col-md-4" id="project2">		
+			<h5>Check back here for future projects as they are completed!</h5>
 		</div>
+	</div>
 	<div class="row col-md-12">
 		<h2>Contact</h2>
 	</div>
-	<div class="contact">
+	<div class="contact" id = "contacts">
 		<a href="#">lmenon@ucsd.edu</a>
 		<!-- <a href="mailto:lmenon" class="fa fa-envelope fa-lg"></a>
 		<a href="#" class="fa fa-github fa-lg"></a> -->
